@@ -1,0 +1,129 @@
+.common__margin_blog {
+    margin-bottom: 6.25rem;
+    margin-top: 69px;
+}
+
+.blog__details_sec h3 {
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+    margin-bottom: 1.3125rem;
+    font-weight: 600;
+}
+.details__img {
+    width: 2.1425rem;
+    height: 2.1425rem;
+}
+.details__img img {
+    object-fit: cover;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+}
+.common_page_gap {
+    margin-top: 1.3125rem;
+    gap: 8.6px;
+}
+.hero__imgs {
+    justify-content: flex-end;
+}
+.deatils__texts p {
+    text-align: justify;
+}
+.blog__subheading h3 {
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+}
+.blog__subheading {
+    border-left: 2px solid #d81159;
+    padding-left: 1.6538rem;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.author__title p {
+    font-size: 12px;
+}
+.common_page_gap {
+    margin-bottom: 2.5rem;
+}
+.social_links,
+.icon_gap {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 39px;
+    justify-content: center;
+    align-items: center;
+}
+.fixed-top {
+    position: fixed;
+    top: 122px;
+    right: 0;
+    left: 90%;
+    z-index: 1030;
+}
+
+.card__lable-text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    /* margin-top: 13px; */
+    margin-bottom: 21px;
+}
+.card__lable-text p {
+    background: #f1f1f3;
+    border-radius: 30px;
+    margin: 0;
+    padding: 5px;
+    width: fit-content;
+    font-family: "Cisco SansR";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+
+    /* identical to box height, or 183% */
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    /* Paragraph Color */
+
+    color: #4d5253;
+}
+
+/* media */
+@media (max-width: 1440px) {
+    .fixed-top {
+        position: fixed;
+        top: 122px;
+        right: 0;
+        left: 95%;
+        z-index: 1030;
+    }
+}
+@media (max-width: 767px) {
+    .fixed-top {
+        position: fixed;
+        top: 122px;
+        right: 0;
+        left: 92%;
+        z-index: 1030;
+        background: #fff;
+        box-shadow: #4e4e4e2f;
+        padding: 20px;
+    }
+}
+@media (max-width: 760px) {
+    .row_gap {
+        gap: 24px;
+    }
+    .hero__imgs {
+        justify-content: center;
+    }
+}
+@media (max-width: 560px) {
+    .mobile_block {
+        display: none;
+    }
+}

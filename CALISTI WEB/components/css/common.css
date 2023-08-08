@@ -1,0 +1,348 @@
+@font-face {
+  font-family: "Cisco Sans";
+  src: url(../fonts/CiscoSans-Bold.ttf);
+}
+@font-face {
+  font-family: "Cisco SansR";
+  src: url(../fonts/CiscoSans.ttf);
+}
+@font-face {
+  font-family: "Cisco SansM";
+  src: url(../fonts/);
+}
+@font-face {
+  font-family: "Cisco Sans-Sl";
+  src: url(../fonts/CiscoSans-ExtraLight.ttf);
+}
+
+* {
+  font-family: "Cisco SansR";
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.comp-head-span {
+  font-family: "Cisco Sans-Sl" !important;
+  font-style: normal !important;
+  font-weight: 250 !important;
+  color: #0d274d !important;
+  margin-bottom: 0 !important;
+  /* or 104% */
+
+  letter-spacing: 0.02em;
+}
+span {
+  font-family: "Cisco SansR" !important;
+  font-style: normal !important;
+  font-size: 0.75rem !important;
+  font-weight: 250 !important;
+  line-height: 4.0625rem !important;
+  letter-spacing: 0.02em !important;
+}
+h1 {
+  font-family: "Cisco Sans" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 3rem !important;
+  line-height: 3.125rem !important;
+  letter-spacing: 0.02em !important;
+  color: #0d274d !important;
+  margin-top: 0.625rem;
+  margin-bottom: 10px !important;
+}
+h2,
+.comp7-head {
+  font-family: "Cisco Sans" !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  font-size: 2.25rem !important;
+  line-height: 3.125rem !important;
+  /* or 178% */
+  letter-spacing: 0.02em;
+  color: #0d274d;
+  margin-bottom: 10px !important;
+
+  /* Text / Gray 900 */
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+h3 {
+  font-family: "Cisco Sans" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 2rem !important;
+  line-height: 2.75rem !important;
+  /* identical to box height */
+
+  letter-spacing: 0.02em !important;
+
+  /* Primary Color */
+
+  color: #0d274d !important;
+}
+
+h4 {
+  font-family: "Cisco SansR" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 1.25rem !important;
+  line-height: 1.75rem !important;
+  letter-spacing: 0.02em !important;
+  text-align: left;
+}
+h5 {
+  font-family: "Cisco Sans" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+  /* identical to box height */
+
+  letter-spacing: 0.02em !important;
+  text-transform: uppercase !important;
+
+  color: #d81159 !important;
+}
+h6 {
+  font-family: "Cisco Sans" !important;
+  font-style: normal !important;
+}
+p {
+  font-family: "Cisco SansR";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem !important;
+  letter-spacing: 0.02em;
+  color: #4d5253;
+}
+pre {
+  font-family: "Cisco SansR";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  letter-spacing: 0.02em;
+}
+
+svg:hover {
+  color: black !important;
+}
+
+/* button, */
+.comp-btn {
+  width: 10.4644rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.875rem;
+  gap: 0.625rem;
+  font-family: "Cisco Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background: #d81159;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.text-left-p {
+  text-align: left;
+  color: unset;
+}
+.text-start-h4 {
+  text-align: left;
+}
+.normal-link {
+  font-family: "Cisco SansR";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #165dff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  padding-bottom: 1.5rem;
+}
+.material-symbols-outlined {
+  font-size: 0.875rem;
+}
+.up3_tiles-img {
+  height: 363.06px;
+  border-radius: 20px;
+}
+.up3_tiles-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.cta-button {
+  width: fit-content;
+  cursor: pointer;
+  display: flex;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 14px;
+  color: white;
+  border: none;
+  background: #d81159;
+  font-family: "Cisco Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background: #af0e48;
+}
+
+.cta-button:active {
+  background: #7b002d;
+  transition: none;
+}
+.main-menu-sub-nav-item {
+  gap: 10px;
+}
+
+.common__margin-top {
+  margin-top: 100px !important;
+}
+
+.common__margin-bottom {
+  margin-bottom: 100px !important;
+}
+.mtls__margin-bootom {
+  margin-bottom: 10px !important;
+}
+
+.mtls__margin-top__button {
+  margin-top: 60px !important;
+}
+
+.backgroung__hero {
+  width: 100%;
+  background-size: cover;
+  height: 373.54px;
+  background-image: url(./img/bg_image.png);
+}
+
+.margin-top__number {
+  margin-top: 6.25rem !important;
+}
+.margin-hero-secction {
+  margin-top: 2.875rem;
+  margin-bottom: 6.25rem;
+}
+.marign__btn-top {
+  margin-top: 3.125rem;
+}
+.marign__top {
+  margin-top: 6.25rem;
+}
+
+.comp-text-ps {
+  justify-content: space-between;
+}
+@media screen and (max-width: 1024px) {
+  .responsive-btn {
+    gap: 5px;
+    padding: 12px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  html,
+  *,
+  body {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .block-component-5050-integration .common__btn-2,
+  .mtls__margin-top__button {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .block-component-4-up-tiles .comp6-box-1 {
+    width: 100% !important;
+    align-items: center !important;
+    justify-content: center !important;
+    display: flex !important;
+  }
+  .block-component-accordion #faq .card .card-body a {
+    text-align: left;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+  }
+
+  .comp6-head-p,
+  .text-left-p,
+  .text-start-h4 {
+    text-align: center !important;
+    margin: auto;
+  }
+  .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {
+    text-align: left;
+  }
+  .block-component-4-up-tiles .comp6-box-1 {
+    align-items: center;
+  }
+  .footer ul li {
+    text-align: left;
+  }
+  .w-footer,
+  .widget-title {
+    text-align: left;
+  }
+  .comp-text-ps {
+    justify-content: center !important;
+    flex-direction: column !important;
+  }
+  .marign__btn-top {
+    display: flex;
+    justify-content: center;
+  }
+  .Hero-section-img {
+    display: none;
+  }
+  .responsive-btn {
+    gap: 5px;
+    padding: 12px;
+    font-size: 10px;
+  }
+  .comp7-head {
+    font-size: 5vw !important;
+    line-height: 7vw !important;
+  }
+  .comp7-bg {
+    padding: 60px 0px !important;
+  }
+}

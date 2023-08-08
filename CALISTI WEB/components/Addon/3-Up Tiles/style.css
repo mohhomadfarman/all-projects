@@ -1,0 +1,37 @@
+.three__up-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.h4 {
+    font-family: "Cisco Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.005em;
+
+    /* Primary Color */
+    margin-bottom: 10px;
+    margin-top: 16px;
+    color: #0d274d;
+}
+.p {
+    font-family: "Cisco Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+
+    text-align: justify;
+    letter-spacing: 0.02em;
+
+    /* Paragraph Color */
+
+    color: #4d5253;
+}
+.up3_tiles-img {
+    height: 363.06px;
+    border-radius: 20px;
+}

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="./common.css" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    /* accrodian slider */
+    .services-title-main {
+      z-index: 2;
+    }
+    .services-title {
+      position: sticky;
+      top: 0;
+    }
+    .service-list {
+      counter-reset: my-sec-counter;
+      margin-top: 5rem;
+      list-style: none;
+    }
+    .service-list li:not(:last-child) {
+      margin-bottom: 3rem;
+      display: block;
+    }
+    .tile.tile--service {
+        width: 115%;
+      padding: 45px 30px;
+      box-shadow: -0.7px 2.9px 53.8px 0 rgb(0 0 0 / 16%);
+      border-radius: 14px;
+      position: relative;
+      background: #fff;
+      display: flex;
+      align-items: flex-start;
+      cursor: pointer;
+      /* width: 145%; */
+    }
+    .tile.tile--service .icn {
+      width: 38px;
+      height: 38px;
+      display: flex;
+      margin-right: 27px;
+    }
+
+    .home-services-inners {
+      height: 60vh;
+    }
+
+    .home-services-inners {
+      position: sticky;
+      top: 12vw;
+      left: 0;
+      height: 70vh;
+      background-color: #e5e7fa;
+      overflow: hidden;
+    }
+    section .container {
+      overflow: visible;
+    }
+    @media (min-width: 1600px) {
+      .home-services-inners .services-content {
+        padding: 8% 5.5% 8% 20%;
+      }
+    }
+    @media (max-width: 990px) {
+        .services-wrapper {
+            gap: 24px;
+        }
+        .tile.tile--service {
+        width: 100%;}
+        
+    }
+    .home-services-inners .services-content {
+      padding: 60px 30px 60px 18%;
+      height: 100%;
+      vertical-align: middle;
+      position: absolute;
+      -webkit-transition: opacity 0.25s linear;
+      transition: opacity 0.25s linear;
+      top: 0;
+      color: #fff;
+    }
+
+    .home-services-inners .services-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .new-heading-style .sub-title,
+    .new-heading-style p {
+      color: #fff;
+    }
+    .service-list li:hover .tile.tile--service {
+      background-image: linear-gradient(67deg, #fff3ca 0%, #c9ebff 91%);
+      text-decoration: none;
+    }
+    a:hover{
+        text-decoration: none;
+        color: unset;
+
+    }
+    a{
+        color: unset;
+    }
+    
+    /* .service-list li.active .tile.tile--service {
+      background-image: linear-gradient(67deg, #fff3ca 0%, #c9ebff 91%);
+    } */
+  </style>
+  <body>
+    <section class="same-common-section section--services">
+      <div class="container">
+        <div class="new-heading-style">
+          <h2>Total control and reliability.</h2>
+          <p class="text-black-50">
+            Calisti’s enables out of the box mTLS encryption of microservices
+            traffic, deep visibility, high availability, and traffic management
+            for cloud-native applications running in multi-cloud, hybrid-cloud,
+            and on-premises environments.
+          </p>
+        </div>
+        <div class="desk-block">
+          <div class="row row-flexible-center services-wrapper ">
+            <div class="col-lg-5 services-title-main">
+              <div class="services-title">
+                <ul class="service-list" id="tabs-nav">
+                  <li class="active">
+                    <a href="#tab1" class="service-list__item active" id="validation">
+                      <div class="tile tile--service align-items-start">
+                        <div class="icn"> <img
+                            alt=""
+                            nitro-lazy-src="https://cdn-gnpmp.nitrocdn.com/zXfatNvCxdJLOJQwdBcjdAFpyWHclmaD/assets/images/optimized/rev-54436af/wp-content/themes/Avada-Child-Theme/media/2022/08/7e78d7cd5792a03c25f2a20ca1fe36b3.home-service-icn_2.svg"
+                            class="img-responsive lazyloaded"
+                            decoding="async"
+                            nitro-lazy-empty=""
+                            id="MTcwODoxNTQ=-1"
+                            src="https://cdn-gnpmp.nitrocdn.com/zXfatNvCxdJLOJQwdBcjdAFpyWHclmaD/assets/images/optimized/rev-54436af/wp-content/themes/Avada-Child-Theme/media/2022/08/7e78d7cd5792a03c25f2a20ca1fe36b3.home-service-icn_2.svg"
+                          /></div>
+                        <div class="d-flex flex-column text-break">
+                          <h4 class="">
+                            Automate your manual troubleshooting processes.
+                          </h4>
+                          <p class="">
+                            View your cloud-native applications with
+                            Grafana-based dashboards, set Prometheus rules for
+                            alerts, and a rich dashboard to manage Kafka
+                            clusters at scale
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#tab2" class="service-list__item" id="CustimApp">
+                      <div class="tile tile--service">
+                        <div class="icn">
+                          <img
+                            alt=""
+                            nitro-lazy-src="https://cdn-gnpmp.nitrocdn.com/zXfatNvCxdJLOJQwdBcjdAFpyWHclmaD/assets/images/optimized/rev-54436af/wp-content/themes/Avada-Child-Theme/media/2022/08/7e78d7cd5792a03c25f2a20ca1fe36b3.home-service-icn_2.svg"
+                            class="img-responsive lazyloaded"
+                            decoding="async"
+                            nitro-lazy-empty=""
+                            id="MTcwODoxNTQ=-1"
+                            src="https://cdn-gnpmp.nitrocdn.com/zXfatNvCxdJLOJQwdBcjdAFpyWHclmaD/assets/images/optimized/rev-54436af/wp-content/themes/Avada-Child-Theme/media/2022/08/7e78d7cd5792a03c25f2a20ca1fe36b3.home-service-icn_2.svg"
+                          />
+                        </div>
+                        <div class="d-flex flex-column text-break">
+                          <h4 class="">
+                            Automate your manual troubleshooting processes.
+                          </h4>
+                          <p class="">
+                            View your cloud-native applications with
+                            Grafana-based dashboards, set Prometheus rules for
+                            alerts, and a rich dashboard to manage Kafka
+                            clusters at scale
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#tab3" class="service-list__item" id="Enterprise">
+                      <div class="tile tile--service">
+                        <div class="icn">
+                          <img
+                            alt=""
+                            nitro-lazy-src="https://cdn-gnpmp.nitrocdn.com/zXfatNvCxdJLOJQwdBcjdAFpyWHclmaD/assets/images/optimized/rev-54436af/wp-content/themes/Avada-Child-Theme/media/2022/08/472aac8938de27124a01bb900213c099.home-service-icn_3.svg"
+                            class="img-responsive lazyloaded"
+                            decoding="async"
+                            nitro-lazy-empty=""
+                            id="MTcxODoxNTQ=-1"
+                            src="https://cdn-gnpmp.nitrocdn.com/zXfatNvCxdJLOJQwdBcjdAFpyWHclmaD/assets/images/optimized/rev-54436af/wp-content/themes/Avada-Child-Theme/media/2022/08/472aac8938de27124a01bb900213c099.home-service-icn_3.svg"
+                          />
+                        </div>
+                        <div class="d-flex flex-column text-break">
+                          <h4 class="">
+                            Automate your manual troubleshooting processes.
+                          </h4>
+                          <p class="">
+                            View your cloud-native applications with
+                            Grafana-based dashboards, set Prometheus rules for
+                            alerts, and a rich dashboard to manage Kafka
+                            clusters at scale
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#tab4" class="service-list__item" id="Blockchain">
+                      <div class="tile tile--service">
+                        <div class="icn">
+                          <img
+                            alt=""
+                            nitro-lazy-src="https://cdn-gnpmp.nitrocdn.com/zXfatNvCxdJLOJQwdBcjdAFpyWHclmaD/assets/images/optimized/rev-54436af/wp-content/themes/Avada-Child-Theme/media/2022/08/5abc1c2c34f0722b803373f7da3273ca.home-service-icn_4.svg"
+                            class="img-responsive lazyloaded"
+                            decoding="async"
+                            nitro-lazy-empty=""
+                            id="MTcyODoxNTQ=-1"
+                            src="https://cdn-gnpmp.nitrocdn.com/zXfatNvCxdJLOJQwdBcjdAFpyWHclmaD/assets/images/optimized/rev-54436af/wp-content/themes/Avada-Child-Theme/media/2022/08/5abc1c2c34f0722b803373f7da3273ca.home-service-icn_4.svg"
+                          />
+                        </div>
+                        <div class="d-flex flex-column text-break">
+                          <h4 class="">
+                            Automate your manual troubleshooting processes.
+                          </h4>
+                          <p class="">
+                            View your cloud-native applications with
+                            Grafana-based dashboards, set Prometheus rules for
+                            alerts, and a rich dashboard to manage Kafka
+                            clusters at scale
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#tab5" class="service-list__item" id="AppBuilder">
+                      <div class="tile tile--service">
+                        <div class="icn">
+                          <img
+                            alt=""
+                            nitro-lazy-src="https://cdn-gnpmp.nitrocdn.com/zXfatNvCxdJLOJQwdBcjdAFpyWHclmaD/assets/images/optimized/rev-54436af/wp-content/themes/Avada-Child-Theme/media/2022/08/bbd3842aca7964215947b8ca0e233162.home-service-icn_5.svg"
+                            class="img-responsive lazyloaded"
+                            decoding="async"
+                            nitro-lazy-empty=""
+                            id="MTczODoxNTQ=-1"
+                            src="https://cdn-gnpmp.nitrocdn.com/zXfatNvCxdJLOJQwdBcjdAFpyWHclmaD/assets/images/optimized/rev-54436af/wp-content/themes/Avada-Child-Theme/media/2022/08/bbd3842aca7964215947b8ca0e233162.home-service-icn_5.svg"
+                          />
+                        </div>
+                        <div class="d-flex flex-column text-break">
+                          <h4 class="">
+                            Automate your manual troubleshooting processes.
+                          </h4>
+                          <p class="">
+                            View your cloud-native applications with
+                            Grafana-based dashboards, set Prometheus rules for
+                            alerts, and a rich dashboard to manage Kafka
+                            clusters at scale
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                 
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-7 services-detail-main">
+              <div class="home-services-inners" id="tabs-content">
+                <div class="services-content active tab-content" id="tab1">
+                  <div class="new-heading-style">
+                    <img src="./img/tablet_mockup_1-scaled.webp" width="100%" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="services-content tab-content nitro-offscreen"
+                  id="tab2"
+                  style="display: none"
+                >
+                  <img src="./img/kubernetes.png" width="100%" alt="" />
+                </div>
+                <div
+                  class="services-content tab-content nitro-offscreen"
+                  id="tab3"
+                  style="display: none"
+                >
+                  <div class="new-heading-style">
+                    <img src="./img/kubernetes.png" width="100%" alt="" />
+                </div>
+                <div
+                  class="services-content tab-content nitro-offscreen"
+                  id="tab4"
+                  style="display: none"
+                >
+                  <div class="new-heading-style">
+                    <img src="./img/kubernetes.png" width="100%" alt="" />
+                </div>
+                
+              
+              </div>
+              <div
+                  class="services-content tab-content nitro-offscreen"
+                  id="tab5"
+                  style="display: none"
+                >
+                  <div class="new-heading-style">
+                    <img src="./img/kubernetes.png" width="100%" alt="" />
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+
+    <script>
+
+    </script>
+  </body>
+</html>

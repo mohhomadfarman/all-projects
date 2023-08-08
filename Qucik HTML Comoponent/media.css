@@ -1,0 +1,79 @@
+@media (min-width:990px){
+/* .why-choose
+{
+    opacity: 0.3;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.why-choose:hover{
+    opacity: 1;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.why-choose:hover .container{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+} */
+}
+@media (max-width: 990px) {
+    .text-field h1{
+        font-size: 36px;
+        line-height: 150%;
+    }
+    .text-field p{
+        font-size: 18px;
+        line-height: 150%;
+    }
+    .sec_1 {
+        padding-top: 37px;
+        position: relative;
+        padding-bottom: 158px;
+    }
+    .card-first
+    {
+        flex-direction: column;
+    }
+    .card-first .img-wrraper
+    {
+        height: 200px;
+    }
+    .why-box,.why-choose-tilte
+    {
+        margin-bottom: 24px;
+    }
+    .why-choose-tilte img{
+        display: none;
+    }
+    .why-choose .container{
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        margin-top: 0 !important;
+    }
+    .service-page .Service-heading h2
+    {
+        font-size: 36px;
+    }
+    .section-text
+    {
+        margin-top: 100px;
+    }
+    .section-text h3
+    {
+        font-size: 24px;
+    }
+    .section-text p
+    {
+        font-size: 16px;
+        line-height: 170%;
+    }
+    .cta-box h3
+    {
+        font-size: 24px;
+    }
+    .cta-box p{
+        font-size: 16px;
+        line-height: 180%;
+
+    }
+
+}

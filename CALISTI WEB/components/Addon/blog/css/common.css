@@ -1,0 +1,302 @@
+@font-face {
+  font-family: "Cisco Sans";
+  src: url(../fonts/CiscoSans-Bold.ttf);
+}
+@font-face {
+  font-family: "Cisco SansR";
+  src: url(../fonts/CiscoSans.ttf);
+}
+@font-face {
+  font-family: "Cisco SansM";
+  src: url(../fonts/);
+}
+@font-face {
+  font-family: "Cisco Sans-Sl";
+  src: url(../fonts/CiscoSans-ExtraLight.ttf);
+}
+
+* {
+  font-family: "Cisco SansR";
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.comp-head-span {
+  font-family: "Cisco Sans-Sl";
+  font-style: normal;
+  font-weight: 250;
+  color: #0d274d;
+  margin-bottom: 0;
+  /* or 104% */
+
+  letter-spacing: 0.02em;
+}
+span {
+  font-family: "Cisco SansR";
+  font-style: normal;
+  font-size: 0.75rem;
+  font-weight: 250;
+  line-height: 4.0625rem;
+  letter-spacing: 0.02em;
+}
+h1 {
+  font-family: "Cisco Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.125rem;
+  letter-spacing: 0.02em;
+  color: #0d274d;
+  margin-top: 0.625rem;
+  margin-bottom: 10px;
+}
+h2,
+.comp7-head {
+  font-family: "Cisco Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 3.125rem;
+  /* or 178% */
+  letter-spacing: 0.02em;
+  color: #0d274d;
+  margin-bottom: 10px;
+
+  /* Text / Gray 900 */
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+h3 {
+  font-family: "Cisco Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.75rem;
+  /* identical to box height */
+
+  letter-spacing: 0.02em;
+
+  /* Primary Color */
+
+  color: #0d274d;
+}
+
+h4 {
+  font-family: "Cisco SansR";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.02em;
+}
+h5 {
+  font-family: "Cisco Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #d81159;
+}
+h6 {
+  font-family: "Cisco SansR";
+  font-style: normal;
+}
+p {
+  font-family: "Cisco SansR";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.02em;
+  color: #4d5253;
+}
+pre {
+  font-family: "Cisco SansR";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  letter-spacing: 0.02em;
+}
+a.inline-link {
+  color: #165dff;
+  font-family: "Cisco SansR";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+/* button, */
+.comp-btn {
+  width: 10.4644rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.875rem;
+  gap: 0.625rem;
+  font-family: "Cisco Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background: #d81159;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.text-left-p {
+  text-align: left;
+  color: unset;
+}
+.text-start-h4 {
+  text-align: left;
+}
+.normal-link {
+  font-family: "Cisco SansR";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #165dff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  padding-bottom: 1.5rem;
+}
+.material-symbols-outlined {
+  font-size: 0.875rem;
+}
+.up3_tiles-img {
+  height: 363.06px;
+  border-radius: 20px;
+}
+.up3_tiles-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.cta-button,
+button.btn-pink {
+  width: fit-content;
+  cursor: pointer;
+  display: flex;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 14px;
+  color: white;
+  border: none;
+  background: #d81159;
+  font-family: "Cisco Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background: #af0e48;
+}
+
+.cta-button:active {
+  background: #7b002d;
+  transition: none;
+}
+.main-menu-sub-nav-item {
+  gap: 10px;
+}
+
+.common__margin-top {
+  margin-top: 100px;
+}
+
+.common__margin-bottom {
+  margin-bottom: 100px;
+}
+.mtls__margin-bootom {
+  margin-bottom: 10px;
+}
+
+.mtls__margin-top__button {
+  margin-top: 60px;
+}
+
+.backgroung__hero {
+  width: 100%;
+  background-size: cover;
+  height: 373.54px;
+  background-image: url(./img/bg_image.png);
+}
+
+.margin-top__number {
+  margin-top: 6.25rem;
+}
+.margin-hero-secction {
+  margin-top: 2.875rem;
+  margin-bottom: 6.25rem;
+}
+.marign__btn-top {
+  margin-top: 3.125rem;
+}
+.marign__top {
+  margin-top: 6.25rem;
+}
+
+.comp-text-ps {
+  justify-content: space-between;
+}
+@media screen and (max-width: 1024px) {
+  .responsive-btn {
+    gap: 5px;
+    padding: 12px;
+    font-size: 11px;
+  }
+}
+@media (max-width: 1199px) {
+  * {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 990px) {
+  * {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 769px) {
+  .common_gap_cls {
+    gap: 24px;
+  }
+  .margin-top__number {
+    margin-top: 2rem;
+  }
+  .common__margin-bottom {
+    margin-bottom: 24px;
+  }
+  * {
+    font-size: 1rem;
+  }
+}

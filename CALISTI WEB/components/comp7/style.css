@@ -1,0 +1,176 @@
+/* dont coppy * csss */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* dont coppy " * " csss */
+
+.comp7-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 165px;
+    gap: 64px;
+
+    /* width: 1440px; */
+    /* height: 426px; */
+    left: 0px;
+    top: 4366.53px;
+
+    background: #0d274d;
+}
+
+.comp7-head {
+    font-family: "Cisco Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    /* or 133% */
+
+    text-align: center;
+    letter-spacing: 0.02em;
+    font-feature-settings: "salt" on, "liga" off;
+
+    /* Default / White */
+
+    color: #ffffff;
+}
+.comp7-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 32px;
+    gap: 10px;
+    border: none;
+    width: 205px;
+    height: 48px;
+
+    /* Default / White */
+
+    background: #ffffff;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    text-align: center;
+    text-transform: uppercase;
+    font-feature-settings: "salt" on, "liga" off;
+
+    color: #0d274d;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.comp7-margin-bottom {
+    margin-bottom: 2.5rem;
+}
+.comp-text-ps span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0px 16px;
+    /* identical to box height, or 171% */
+
+    font-feature-settings: "salt" on, "liga" off;
+
+    /* Default / White */
+
+    color: #ffffff;
+}
+
+.footer-brand-name {
+    font-family: "Cisco Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+
+    color: #0d274d;
+}
+.footetr-brand-tagline {
+    font-family: "Cisco Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+
+    color: #0d274d;
+}
+#footer-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+}
+.footer-margin-top {
+    margin-top: 151px;
+}
+.p-margin-1 {
+    margin-top: 20px;
+}
+.footer-link-items {
+    font-family: "Cisco Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    letter-spacing: -0.0145rem;
+    list-style: none;
+    margin-bottom: 1.25rem;
+    color: #233b5d;
+}
+.footer-link-items a:hover {
+    font-family: "Cisco Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    letter-spacing: -0.0145rem;
+    list-style: none;
+    margin-bottom: 1.25rem;
+    color: #db2973;
+}
+.footer-link-items a {
+    font-family: "Cisco Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    letter-spacing: -0.0145rem;
+    text-decoration: none;
+    color: #233b5d;
+}
+
+.footer-text-rights {
+    font-family: "Cisco Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    /* identical to box height */
+
+    letter-spacing: -0.204545px;
+
+    color: #1e2833;
+
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    margin-top: 50px;
+}

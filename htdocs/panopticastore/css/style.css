@@ -1,0 +1,342 @@
+@font-face {
+    font-family: "Cisco Sans";
+    src: url(./fonts/CiscoSans.ttf);
+}
+* {
+    font-family: "Cisco Sans" !important;
+}
+#navbar_top {
+    background-color: #ffffff;
+    z-index: 1000;
+}
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+.pull-left {
+    float: left;
+}
+.header {
+    position: relative;
+}
+.tagline {
+    font-family: "Cisco Sans";
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-top: 25px;
+    cursor: pointer;
+}
+.tagline a {
+    text-decoration: none;
+}
+.tagline a {
+    color: #000000 !important;
+}
+.brand {
+    top: -20px;
+}
+.brand {
+    display: block;
+    text-align: center;
+}
+.navbar-header {
+    height: 4.375em;
+}
+.pull-right {
+    float: right;
+}
+.logged-in {
+    display: inline-block;
+}
+ul.user_links {
+    width: 200px;
+    margin-bottom: 24px;
+    float: left;
+}
+.ccn.divider {
+    border-left: 1px solid #6c757d;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 10px;
+    margin-top: 14px;
+}
+
+.product-tile .card-description .product-name {
+    font-size: 24px;
+    font-family: "Cisco Sans";
+    color: #4d4c4c;
+}
+/* new */
+.navbar-toggler:focus {
+    box-shadow: unset;
+}
+footer {
+    padding-bottom: 0;
+    background-color: #0d274d;
+}
+footer .first-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 0;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer .second-row {
+    flex-wrap: wrap;
+}
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+footer .first-row .left-section ul li,
+footer .second-row .left-section ul li {
+    list-style-type: none;
+    width: 125px;
+    display: inline-block;
+    font-family: "CiscoSansExtraLight";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: none;
+    height: 30px;
+}
+footer .first-row .left-section ul li a,
+footer .second-row .left-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer .first-row .right-section .social-links {
+    width: auto;
+}
+footer .social-links {
+    float: left;
+}
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+links::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+footer .social-links li {
+    float: left;
+    margin: 0.313em;
+}
+footer .first-row .right-section .social-links li {
+    width: auto;
+}
+footer .first-row .right-section {
+    justify-content: left;
+    display: flex;
+}
+
+footer .second-row {
+    padding: 30px 0 40px 0;
+    border-top: 1px solid #495057;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+footer .second-row .copyright {
+    color: #ffffff;
+    margin: 0;
+    font-size: 14px;
+}
+@media (min-width: 992px) {
+    .order-lg-1 {
+        order: 1;
+    }
+}
+footer .second-row {
+    padding: 30px 0 40px 0;
+    border-top: 1px solid #495057;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+footer .first-row .left-section,
+.left-section ul {
+    justify-content: left;
+    display: flex;
+    gap: 5%;
+}
+.product-tile .card-description .prod-moreinfo {
+    font-size: 16px;
+    font-family: "Cisco Sans";
+}
+
+.tile-image {
+    width: 100% !important;
+}
+.product-tile .card-description {
+    padding: 20px 5px;
+}
+.main-menu,
+.dropdown-menu {
+    background-color: #1e4471;
+    color: #fff;
+}
+.dropdown-item {
+    color: #fff;
+}
+.btn.focus,
+.btn:focus {
+    box-shadow: none;
+}
+.navbar-light .navbar-toggler {
+    border: unset;
+}
+.bg-light {
+    padding: 15px 0px !important;
+    padding-bottom: 0px !important ;
+}
+.nav_top {
+    position: relative;
+}
+.nav_logo {
+    position: absolute;
+    left: 50%;
+}
+.login_btn {
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-right: 1px solid lightgray;
+}
+.login_btn p {
+    margin: 0;
+}
+.cart-1 {
+    padding-left: 20px;
+    position: relative;
+}
+.cart-1 p {
+    margin: 0;
+}
+.cart-1 span {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border-radius: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 769px) {
+    .d-md-inline-block {
+        display: inline-block !important;
+    }
+}
+@media (min-width: 1200px) {
+    .site-search {
+        width: 20em;
+    }
+}
+@media (min-width: 544px) {
+    .site-search {
+        margin-right: 0.5em;
+    }
+}
+@media (max-width: 769px) {
+    .product-tile .card-description .prod-moreinfo {
+        line-height: 24px;
+    }
+}
+.site-search {
+    position: relative;
+    height: 2.5em;
+}
+.site-search input {
+    padding-right: 2rem;
+    height: 100%;
+}
+.navbar-header .country-selector,
+.navbar-header .search,
+.navbar-header .minicart {
+    margin: 0.5em 0 0 0.5em;
+}
+.navbar-header .user,
+.navbar-header .country-selector,
+.navbar-header .search,
+.navbar-header .minicart {
+    display: inline-block;
+    margin: 1.125em 0 0 0.5em;
+}
+@media (min-width: 992px) {
+    .brand {
+        width: 14.125em;
+        margin-left: -7.0625em;
+        padding-top: 0.5em;
+    }
+}
+
+@media (max-width: 543px) {
+    .main-callout {
+      background-image: url(on/demandware.static/-/Sites-ccn-Library/default/dw8a9a599d/images/homepage/homebanner.png);
+      width: 100%;
+      height: 150px;
+    }
+    .callout-heading {
+      font: normal normal 300 20px/49px CiscoSansExtraLight;
+      letter-spacing: 0.61px;
+
+      height: 49px;
+      color: #ffffff;
+      opacity: 1;
+    }
+  }
+  @media (max-width: 991px) and (min-width: 544px) {
+    .main-callout {
+      background-image: url(on/demandware.static/-/Sites-ccn-Library/default/dw8a9a599d/images/homepage/homebanner.png);
+      width: 100%;
+      height: 150px;
+    }
+    .callout-heading {
+      font: normal normal 300 28px/49px CiscoSansExtraLight;
+      letter-spacing: 0.61px;
+
+      height: 49px;
+      color: #ffffff;
+      opacity: 1;
+    }
+  }
+  @media (min-width: 992px) {
+    .main-callout {
+      background-image: url(on/demandware.static/-/Sites-ccn-Library/default/dw8a9a599d/images/homepage/homebanner.png);
+      width: 100%;
+      height: 150px;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+    }
+    .callout-heading {
+      font: normal normal 300 36px/49px CiscoSansExtraLight;
+      letter-spacing: 0.61px;
+      top: 50px;
+      left: 87px;
+      height: 49px;
+      color: #ffffff;
+      opacity: 1;
+    }
+  }

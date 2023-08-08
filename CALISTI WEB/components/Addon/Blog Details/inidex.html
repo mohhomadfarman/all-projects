@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>blog details</title>
+
+</head>
+
+<body>
+    <section class="common__margin_blog">
+        <div class="container">
+            <div class="row row_gap">
+                <div class="col-md-8">
+                    <div>
+                        <div class="card__lable-text">
+                            <p>Development</p>
+                            <p>API Security</p>
+                            <p>Kubernetes</p>
+                        </div>
+                        <div class="blog__details_sec">
+                            <h3>
+                                Announcing Calisti v1.11: Deep Visualization and Management.
+                            </h3>
+                         
+                        </div>
+                        <div class="d-flex align-items-center common_page_gap">
+                            <div class="details__img">
+                                <img src="./img/prassark 1.png" alt="">
+                            </div>
+                            <div class="author__title">
+                                <p class="m-0">Prasenjit Sarkar</p>
+                                <p class="m-0">Thursday, May 5th, 2022 . 5 min read</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="deatils__texts">
+                        <p>Today’s developer just can’t win. It’s a continuous tug of war between business
+                            objectives—the boss who wants releases “faster, faster, faster!” and the security team, who
+                            keeps halting releases because of insecure code—with the developer in the middle.</p>
+                        <p>Some teams try to “paste” security into the development stage, tacking it on to developers’
+                            overflowing to-do lists and hoping for the best. This strategy often ends with the need to
+                            hire expensive security personnel to save the day and clean up breaches after the fact.</p>
+                        <p> Neither side is entirely wrong and neither side is entirely right. With today’s “fail-fast,
+                            fail early” CI/CD environment, there’s extreme pressure to get releases to market quickly to
+                            stay competitive. But there’s a high cost to poor code construction, too: breaches are
+                            expensive—costing time, money, and customers.</p>
+                        <p> It’s a high-stakes, no-win situation for the developer…and it’s exhausting.</p>
+
+
+                        <div class="blog__subheading">
+                            <h3>The blame game: is it the tool or the user?</h3>
+                        </div>
+
+                        <p>Every security tool’s effectiveness depends both upon its architecture and upon its proper
+                            use: a solid security tool is flawed if it is poorly consumed, and a poorly designed
+                            security tool is flawed, even if its users adhere to best practices. That’s why security
+                            training (teaching employees how to spot phishing, how to safeguard passwords, and so on),
+                            coupled with easy-to-use, low-friction security tools (multi-factor/biometric
+                            authentication, single sign-on, and security scanners) have become a commonplace combination
+                            in today’s enterprise.
+                        </p>
+
+                        <p>The question is: why are we not doing the same for developers, when the stakes are so high?
+                            Can we reduce risk to the enterprise and get to market sooner by providing developers with
+                            lightweight security education, augmented with easy-to-use tools? We can inform, guide, and
+                            assist a developer in constructing secure code. But wouldn’t it be a better strategy to
+                            truly achieve “secure by design” software by providing low-friction security capabilities
+                            into the development process? We need to enable developers to define granular security
+                            without the traditional complexity.</p>
+
+                        <div class="blog__subheading">
+                            <h3>Declarative security</h3>
+                        </div>
+
+                        <p>The following is an example of how to enable the approach I described above.
+                        </p>
+                        <p>Developers’ propensity to create attack vectors is related to the complexity of code required
+                            to handle access control. This complexity makes room for faults, such as poor code
+                            construction and vulnerabilities. CWE-248: Improper Access Control describes these
+                            weaknesses.
+                        </p>
+                        <p>Instead, we could abstract the complexity into the background with a declarative style of
+                            security implementation, using deployment descriptors that are handled outside of the
+                            application. This could take the form of an existing module (open-source security vetted)
+                            with a solid architecture and a fairly simple implementation, such as an access-control list
+                            that utilizes a well-documented security mechanism. Reliable, widespread use of such tools
+                            goes hand-in-hand, making standardization the key to success.</p>
+
+                        <div class="blog__subheading">
+                            <h3>Securing APIs</h3>
+                        </div>
+                        <p>Developer security touches many technologies, and a declarative security style holds the
+                            potential to aid them in all of those arenas. One such area that calls for immediate action
+                            is cloud-native architecture. Its proliferation of APIs (which suffer from a lack of
+                            security standardization) has made API security an increasingly hot topic.
+                        </p>
+                        <p>Popular API frameworks—such as FastAPI, Flask, etc.—are based on the OpenAPI Specification,
+                            which provides a standard for describing APIs with a rich set of features. But on the
+                            security front, it completely neglects authorization.
+                        </p>
+                        <p>The OpenAPI specification and its frameworks leave the developer to consider, design, and
+                            implement any kind of authorization, with no security standardization—a risky proposition
+                            with plenty of room for error. However, like with access control, declarative security could
+                            help ensure security and standardize community-wide operations.
+                        </p>
+                        <p>The 2019 Open Web Application Security Project (OWASP) report of the Top-10 API threats
+                            placed Broken Object Level Authorization (BOLA) and Broken User Authentication (both direct
+                            results of missing or poorly implemented authorization controls) as the top two on the list.
+                        </p>
+                        <div>
+                         <img src="./img/image1 1.png" width="100%" alt="">
+                        </div>
+                        <p>With a declarative-security tool, the developer would simply define the access-control rules, narrowing the room for error.
+                        </p>
+                        <p>Securing APIs is an intensive endeavor addressing various technologies and participants within and outside the realm of visibility of the API provider. Real-time data of API traffic and its dependencies would be of great value.
+                        </p>
+                        <p>One open-source tool that specializes in this is APIClarity. APIClarity performs data capture and analysis, providing on-the-fly visibility into API traffic and identifying potential risks.
+                        </p>
+                        <p>Cisco’s recently launched product, Panoptica, takes APIClarity a step further—providing a deeper set of API security functionalities as a SaaS offering. If you’d like to take it for a spin, here are three options:
+                        </p>
+                        <p>Try Panoptica’s API security for free in your own Kubernetes environment. This free tier works on up to 15 nodes and one cluster—no credit card required—and you can use it for as long as you like. To access this free tier, visit the website and click “Sign Up Free” in the top-right corner.
+                        </p>
+                        <p>Take a closer look with a point-and-click interactive web demo.<br>
+                            Try it hassle-free in a safe, pre-configured sandbox environment.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="subscribe_box_accordians">
+                        <div class="mb-2 mt-2 accordian_heading">
+                            What we’re tweeting about
+                        </div>
+                        <div class=" border_class">
+                            
+                       
+                         </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+   <div class="mobile_block">
+    <div class="container-fluid"> 
+        <div class="row justify-content-end">
+           <div class="col-md-2">
+            <div class="social_links fixed-top">
+                <p class="m-0">Share</p>
+               <div class="d-flex flex-column icon_gap ">
+                <a href=""><img src="./img/Vector.png" alt=""></a>
+                <a href=""><img src="./img/Icon.png" alt=""></a>
+                <a href=""><img src="./img/Group 1165.png" alt=""></a>
+                <a href=""><img src="./img/Group 427319243.png" alt=""></a>
+                <a href=""><img src="./img/Group 1167.png" alt=""></a>
+               </div>
+            </div>
+           </div>
+        </div>
+     </div>
+   </div>
+   
+    </section>
+</body>
+
+</html>

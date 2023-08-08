@@ -1,0 +1,90 @@
+/*quickstart page start*/
+
+.main__heading__bar {
+    background: #0d274d;
+    border-radius: 70px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+.main__heading__bar .circle {
+    width: 53.36px;
+    height: 53.36px;
+    background: #ffffff;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main__heading__bar h4 {
+    margin: 0;
+}
+.Qucik__head-mb {
+    margin-bottom: 66.89px;
+}
+.Qucik__head-mb-2 {
+    margin-bottom: 50px;
+}
+.code-editor {
+    padding: 10px;
+    background-color: #d9e0e7;
+    overflow: auto;
+    height: 46px;
+    border-radius: 8px;
+    width: 100%;
+    display: inline-flex;
+    color: #0d274d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.pointer {
+    cursor: pointer;
+}
+.Qucik__head-margin-bottom {
+    margin-bottom: 20px;
+}
+.text-area-download p {
+    margin-bottom: 59px;
+}
+.btn-1-mac {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 20px;
+    width: 167.43px;
+    height: 48px;
+    gap: 10px;
+    font-family: "Cisco Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    background: #d81159;
+    color: #ffffff;
+    border: 1px solid #d81159;
+}
+.btn-1-mac:hover {
+    background: #af0e48;
+}
+.btns-gap {
+    gap: 19px;
+}
+.btns-margin {
+    margin-bottom: 90px;
+}
+.btns-margin2 {
+    margin-bottom: 60px;
+}
+.a-down-link {
+    text-decoration: none;
+    color: #165dff;
+}
+.a-down-link:hover {
+    color: #165dff;
+    text-decoration: none;
+}

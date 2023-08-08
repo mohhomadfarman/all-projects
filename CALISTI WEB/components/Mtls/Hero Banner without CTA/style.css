@@ -1,0 +1,27 @@
+.common__margin-top {
+    margin-top: 100px !important;
+}
+
+.common__margin-bottom {
+    margin-bottom: 100px !important;
+}
+.mtls__margin-bootom {
+    margin-bottom: 10px !important;
+}
+
+.mtls__margin-top__button {
+    margin-top: 60px !important;
+}
+
+.backgroung__hero {
+    width: 100%;
+    background-size: cover;
+    height: 373.54px;
+    background-image: url(./img/bg_image.png);
+}
+.color-hero__text {
+    color: white;
+}
+.color-hero__text h1 {
+    color: white;
+}

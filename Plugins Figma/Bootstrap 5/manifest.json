@@ -1,0 +1,17 @@
+{
+  "name": "Bootstrap 5",
+  "id": "1254082242846163601",
+  "api": "1.0.0",
+  "main": "code.js",
+  "capabilities": [],
+  "enableProposedApi": false,
+  "editorType": [
+    "figma"
+  ],
+  "ui": "ui.html",
+  "networkAccess": {
+    "allowedDomains": [
+      "none"
+    ]
+  }
+}

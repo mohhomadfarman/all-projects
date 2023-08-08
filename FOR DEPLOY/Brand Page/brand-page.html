@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="css/index.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+
+		.banner_left h2 {
+			font-weight: 700;
+			font-size: 70px;
+			line-height: 130%;
+			color: #FFF;
+		}
+
+		.banner_left h2 span {
+			color: #FFF50C;
+		}
+
+		.banner_left p {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 160%;
+			color: #E1E1E1;
+			margin: 1rem 0;
+		}
+
+		.banner_left a {
+			background: #0F95E2;
+			box-shadow: 0px 15px 30px rgba(1, 47, 73, 0.15);
+			border-radius: 10px;
+			color: #fff;
+		}
+
+		.banner_left a:hover {
+			background: #0F95E2;
+			color: #fff;
+
+		}
+
+		.banner_left {
+			margin: 3rem 0;
+			position: relative;
+		}
+
+		.banner_left::before {
+			content: "";
+			background: url("img/left_dots.png");
+			position: absolute;
+			left: -48%;
+			bottom: -67%;
+			background-position: left bottom;
+			height: 100%;
+			width: 599px;
+			background-repeat: no-repeat;
+			z-index: -1;
+		}
+
+
+		.banner_area::before {
+			content: "";
+			background: url("img/right_lines.png");
+			position: absolute;
+			right: -16%;
+			bottom: -22%;
+			background-position: center;
+			height: 100%;
+			width: 100%;
+			background-repeat: no-repeat;
+			z-index: -1;
+		}
+
+		.banner_area {
+			padding-bottom: 15rem;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.section_dev {
+			display: flex;
+			gap: 1.5rem;
+		}
+
+		.banner_right {
+			position: relative;
+		}
+
+		.banner_right::before {
+			content: "";
+			background: url("img/round_circle.png");
+			background-position-x: 0%;
+			background-position-y: 0%;
+			background-repeat: repeat;
+			position: absolute;
+			left: -17%;
+			top: -18%;
+			background-position: left top;
+			height: 100%;
+			width: 100%;
+			background-repeat: no-repeat;
+			z-index: -1;
+		}
+
+		.banner_right::after {
+			content: "";
+			background: url("img/btm_box.png");
+			background-position-x: 0%;
+			background-position-y: 0%;
+			background-repeat: repeat;
+			position: absolute;
+			left: 63%;
+			bottom: -18%;
+			background-position: left bottom;
+			height: 100%;
+			width: 100%;
+			background-repeat: no-repeat;
+			z-index: -1;
+		}
+
+		.banner_area {
+			padding-bottom: 15rem;
+		}
+
+		.center_area {
+			background: #E5F5FF;
+			padding: 5rem 0;
+		}
+
+		.center_left p {
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 140%;
+			color: #000000;
+		}
+
+		.logo_sec {
+			background: #FFFFFF;
+			box-shadow: 0px 15px 35px rgba(1, 47, 73, 0.15);
+			border-radius: 10px;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			padding: 15px;
+		}
+
+		.center_left h2 {
+			font-style: normal;
+			font-weight: 700;
+			font-size: 64px;
+		}
+
+		.center_right .col-md-2 {
+			margin-bottom: 1rem;
+		}
+
+		.business_help_left {
+			background: #FFF5DB;
+			border-top-left-radius: 119px;
+			padding: 44px;
+			width: 580px;
+			margin-right: 4rem;
+			z-index: 99;
+		}
+
+		.business_help_left h2 {
+			font-weight: 500;
+			font-size: 41.717px;
+			line-height: 58px;
+			color: #000000;
+		}
+
+		.business_help_left p {
+			font-weight: 400;
+			font-size: 19.0869px;
+			line-height: 160%;
+			color: #5C5C5C;
+		}
+
+		.business_help_sec {
+			display: flex;
+			align-items: center;
+		}
+
+		.card_area {
+			background: #FFFFFF;
+			border: 1.19293px solid #F2F2F2;
+			box-shadow: 0px 11.9293px 59.6465px rgba(0, 0, 0, 0.05);
+			border-radius: 47.7172px;
+			padding: 50px;
+			text-align: center;
+			margin-bottom: 2rem;
+		}
+
+		.card_area h2 {
+			font-weight: 400;
+			font-size: 28.63px;
+			line-height: 39px;
+			text-align: center;
+			color: #000000;
+			margin: 1.5rem 0;
+		}
+
+		.card_area p {
+			font-weight: 400;
+			font-size: 19.0869px;
+			line-height: 140%;
+			text-align: center;
+			color: #757575;
+		}
+
+		.business_help_right {
+			width: 100%;
+			z-index: 99;
+		}
+
+		.card_area img {
+			margin-bottom: 1rem;
+			width: 90px;
+			height: 90px;
+		}
+
+		.business_help_sec {
+			display: flex;
+			align-items: center;
+			width: 90%;
+			margin-left: auto;
+			padding: 5rem 0;
+			position: relative;
+		}
+
+		.business_help_sec::before {
+			content: "";
+			position: absolute;
+			right: 0;
+			top: 25%;
+			height: 600px;
+			width: 85%;
+			background: #F4F9FF;
+			border-radius: 178.94px 0px 0px 0px;
+		}
+
+		.sec_one:first-child {
+			margin-top: 6rem;
+		}
+
+		.business_help_right {
+			position: relative;
+		}
+
+		.sec_one {
+			width: 30%;
+		}
+
+
+		/* footer */
+
+		.btn {
+			background-color: white;
+			padding: 13px 21px;
+			margin-right: 17px;
+			color: #0f95e2;
+		}
+
+		span.btn-1 {
+			border: 1px solid white;
+			padding: 13px 21px;
+			color: white;
+			border-radius: 5px;
+		}
+
+		.button-card {
+			margin-top: 69px;
+		}
+
+		.above_footer_sec {
+			background: url("img/home/Getty\ background.png");
+
+			padding: 72px 603px 59px 602px;
+		}
+
+		h5 {
+			color: white;
+			font-size: 3rem;
+			font-weight: 700;
+			margin-bottom: 2.75rem;
+		}
+
+		.btn-parts {
+			background-color: yellow;
+			padding: 1.56rem 2.68rem;
+			margin-top: 3.31rem;
+			font-size: 1rem;
+			font-weight: 700;
+			border-radius: 0.6rem;
+		}
+
+		p {
+			color: white;
+			font-size: 1.25rem;
+			font-weight: 400;
+		}
+
+		.col-md-4 h6 {
+			color: white;
+			font-size: 1.5rem;
+			font-weight: 700;
+			margin-top: 2rem;
+		}
+
+		.row-content {
+			background-color: #ffe400;
+		}
+
+		.content {
+			display: flex;
+			justify-content: space-around;
+		}
+
+		ul {
+			display: flex;
+		}
+
+		.content-footer li {
+			font-size: 1.25rem;
+			margin: 1rem 2.8rem;
+			list-style: none;
+			font-weight: 400;
+		}
+
+		.icons li {
+			margin: 1rem 0.8rem;
+			list-style: none;
+			font-size: 1.25rem;
+			font-weight: 400;
+		}
+
+		.footer {
+			position: relative;
+			/* align-items: center; */
+		}
+
+		footer .col-md-3 {
+			margin: 1.25rem;
+		}
+
+		.up-arrow img {
+			position: absolute;
+			left: 97%;
+
+			transform: translate(-44px, -59px);
+		}
+
+		.footer .row {
+			padding: 50px 350px 70px 150px;
+		}
+
+		.above_footer_sec {
+			text-align: center;
+			background: url("img/home/Getty\ background.png");
+			padding: 5rem 0;
+			position: relative;
+		}
+
+		.above_footer_sec h2 {
+			font-weight: 700;
+			font-size: 48px;
+			line-height: 130%;
+			text-align: center;
+			color: #ffffff;
+			position: relative;
+		}
+
+		.above_footer_sec a {
+			background: #ffe400;
+			box-shadow: 0px 15px 30px rgba(1, 47, 73, 0.15);
+			border-radius: 10px;
+			color: #000;
+			position: relative;
+		}
+
+		.above_footer_sec::before {
+			background: rgba(0, 0, 0, 0.5);
+			position: absolute;
+			content: "";
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+		}
+
+		.above_footer_sec a:hover {
+			background: #ffe400;
+			color: #000;
+		}
+
+		.padding-G {
+			padding-left: 9.375rem !important;
+			padding-right: 9.375rem !important;
+		}
+
+
+		.business_help {
+			background: url("img/Brands Page.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+			overflow: hidden;
+		}
+
+		.business_help_sec::after {
+			content: "";
+			position: absolute;
+			right: 0;
+			height: 100%;
+			width: 300px;
+			background: url("img/business_dots.png");
+			background-size: contain;
+			left: 26px;
+			background-repeat: no-repeat;
+			bottom: 16%;
+			background-position: bottom left;
+		}
+
+		.business_help_right::after {
+			content: "";
+			background: url("img/round_red.png");
+			background-position-x: 0%;
+			background-position-y: 0%;
+			background-repeat: repeat;
+			background-position-x: 0%;
+			background-position-y: 0%;
+			background-repeat: repeat;
+			position: absolute;
+			left: 53%;
+			bottom: 11%;
+			background-position: left bottom;
+			height: 100%;
+			width: 100%;
+			background-repeat: no-repeat;
+			z-index: -1;
+		}
+	</style>
+
+	<title>Brand Page</title>
+</head>
+
+<body>
+
+
+
+	<nav class="navbar navbar-expand-lg bg-light">
+		<div class="container-fluid index-navbar">
+			<div class="logo">
+				<a class="navbar-brand" href="#"> <img src="img/Home/PNG.svg" alt=""></a>
+			</div>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+				<ul class="nav ml-auto mb-2 mb-lg-0 align-items-center d-flex index-ul">
+					<li class="nav-item "><a href="/Home/Index.html"
+							class="nav-link active index-link-active p-0">HOME</a></li>
+					<li class="nav-item "><a href="/About/about-us.html" class="nav-link index-link p-0">ABOUT</a>
+					</li>
+					<li class="nav-item "><a href="/Gellery/index.html" class="nav-link index-link p-0">GALLERY</a>
+					</li>
+					<li class="nav-item "><a href="/Brand Page/brand-page.html"
+							class="nav-link index-link p-0">BRANDS</a></li>
+					<li class="nav-item "><a href="/firm/firms.html" class="nav-link index-link p-0">FIRMS</a></li>
+					<li class="nav-item "><a href="/Contact/index.html" class="nav-link index-link p-0">CONTACT
+							US</a></li>
+					<li class="nav-item ">
+						<button class="  index-btn"><span><img src="img/Home/eva_phone-call-fill.svg" /></span>333
+							333 23
+							23</button>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+
+
+	<div class="banner_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="banner_left">
+						<h2><span>Brand</span> List</h2>
+						<p>Leading digital agency with solid design and development expertise. We build websites, mobile
+							applications, and elaborate online business services.</p>
+						<a class="btn" href="">Discover More</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="banner_right">
+						<img src="img/banner_img.png">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="center_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="center_left">
+						<h2>Brands</h2>
+						<p>Popular group, a pioneer in the distribution of two-wheeler</p>
+
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="center_right">
+						<div class="row">
+
+
+							<div class="col-md-2">
+								<div class="logo_sec">
+									<img class="img-fluid" src="img/img_1.png">
+								</div>
+							</div>
+
+							<div class="col-md-2">
+								<div class="logo_sec">
+									<img class="img-fluid" src="img/img_2.jpg">
+								</div>
+							</div>
+
+
+							<div class="col-md-2">
+								<div class="logo_sec">
+									<img class="img-fluid" src="img/img_3.png">
+								</div>
+							</div>
+
+
+							<div class="col-md-2">
+								<div class="logo_sec">
+									<img class="img-fluid" src="img/img_4.jpg">
+								</div>
+							</div>
+
+							<div class="col-md-2">
+								<div class="logo_sec">
+									<img class="img-fluid" src="img/img_5.jpg">
+								</div>
+							</div>
+
+							<div class="col-md-2">
+								<div class="logo_sec">
+									<img class="img-fluid" src="img/img_6.jpg">
+								</div>
+							</div>
+
+
+							<div class="col-md-2">
+								<div class="logo_sec">
+									<img class="img-fluid" src="img/img_7.png">
+								</div>
+							</div>
+
+							<div class="col-md-2">
+								<div class="logo_sec">
+									<img class="img-fluid" src="img/img_8.png">
+								</div>
+							</div>
+
+							<div class="col-md-2">
+								<div class="logo_sec">
+									<img class="img-fluid" src="img/img_9.jpg">
+								</div>
+							</div>
+
+
+							<div class="col-md-2">
+								<div class="logo_sec">
+									<img class="img-fluid" src="img/img_10.jpg">
+								</div>
+							</div>
+
+							<div class="col-md-2">
+								<div class="logo_sec">
+									<img class="img-fluid" src="img/img_11.jpg">
+								</div>
+							</div>
+
+
+							<div class="col-md-2">
+								<div class="logo_sec">
+									<img class="img-fluid" src="img/img_12.jpg">
+								</div>
+							</div>
+
+
+							<div class="col-md-2">
+								<div class="logo_sec">
+									<img class="img-fluid" src="img/img_13.jpg">
+								</div>
+							</div>
+
+							<div class="col-md-2">
+								<div class="logo_sec">
+									<img class="img-fluid" src="img/img_14.jpg">
+								</div>
+							</div>
+
+						</div>
+
+
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<div class="business_help">
+		<div class="business_help_sec">
+			<div class="business_help_left">
+				<h2>How can we help your Business ?</h2>
+				<p>We build readymade websites, mobile applications,<br> and elaborate online business services.</p>
+			</div>
+			<div class="business_help_right">
+				<div class="section_dev">
+					<div class="sec_one">
+						<div class="card_area">
+							<img src="img/box-search_1.png">
+							<h2>Business Idea Planning</h2>
+							<p>We present you a proposal and discuss niffty-gritty like</p>
+
+						</div>
+						<div class="card_area">
+							<img src="img/box-search_2.png">
+							<h2>Financial Planning System</h2>
+							<p>We present you a proposal and discuss niffty-gritty like</p>
+
+						</div>
+					</div>
+					<div class="sec_one">
+						<div class="card_area">
+							<img src="img/box-search_3.png">
+							<h2>Development Website and App</h2>
+							<p>We present you a proposal and discuss niffty-gritty like</p>
+
+						</div>
+						<div class="card_area">
+							<img src="img/box-search_4.png">
+							<h2>Market Analysis Project</h2>
+							<p>We present you a proposal and discuss niffty-gritty like</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="above_footer_sec ">
+		<h2>Find the Best Automotive<br> Spare Parts</h2>
+		<a href="" class="btn">Discover More</a>
+	</div>
+
+	<div class="col-lg-12 padding-G py-5 p-0">
+
+
+		<div class="row ">
+			<div class="col-md-4 p-0">
+				<img style="width: 92%;" src="img/home/footer-logo.png ">
+
+				<h6>POPULAR GROUPS OF COMPANY</h6>
+				<p>NO-5 STATE BANK STREET FLOOR 1 MOUNT ROAD,<br> CHENNAI TAMIL NADU – 600002</p>
+
+			</div>
+
+
+			<div class="col-md-4 p-0">
+				<h6>Honda Retail Outlet - Chennai, TN</h6>
+				<p>No.168 Bharathi Salai, Pycrofts Road,<br>
+					Royapetah,Chennai-14
+
+				</p>
+				<div class="">
+					<h6>Chennai Warehouse Address:</h6>
+					<p>No.165/1, Manali Expressway, <br> Manjambakkam, Mathur village Madhavaram, Chennai, Tiruvallur,
+						Tamil
+						Nadu,
+						600103
+					</p>
+				</div>
+				<div class="">
+					<h6>Honda Retail Outlet - Madurai, TN</h6>
+					<p>95, North Marat Street, <br>Vakil New Street, Madurai 625001</p>
+				</div>
+			</div>
+			<div class="col-md-4 p-0">
+				<h6>TVS Warehouse - Madurai, TN</h6>
+				<p>133/1 SPG Warehousing, BYEPASS Road,<br>Kamarajar Nagar, Avaniyapuram, Madurai -625012
+
+				</p>
+				<div class="">
+					<h6>Honda Warehouse- Madurai, TN</h6>
+					<p>133/1 SPG Warehousing, BYEPASS Road,<br> Kamarajar Nagar, Avaniyapuram, Madurai -625012
+					</p>
+				</div>
+				<div class="">
+					<h6>Honda Branch-Salem, TN</h6>
+					<p>No 77, AA Road, Pullikkuthi street, No.4, <br>Gugai, Salem, Salem, Tamil Nadu, 636006</p>
+				</div>
+			</div>
+
+
+		</div>
+		<a href="#top" class="up-arrow"><img src="img/home/up-arrow.svg"></a>
+
+	</div>
+
+	<div class="container-fluid ">
+		<div class="row-content row ">
+			<div class="col-md-6 content p-0 ">
+				<ul class="content-footer justify-content-start p-0">
+					<li>Copyright © 2022. All Right Reserved</li>
+					<li>Privacy policy</li>
+					<li>Site map</li>
+				</ul>
+
+			</div>
+			<div class="col-md-6 icons p-0 ">
+
+				<ul class="justify-content-end">
+					<li>Follow us on:</li>
+					<li> <img src="img/home/insta.svg"></li>
+					<li> <img src="img/home/fbook.svg"></li>
+					<li> <img src="img/home/google-plus.svg"></li>
+					<li> <img src="img/home/link-in.svg"></li>
+
+				</ul>
+
+
+
+			</div>
+
+
+		</div>
+	</div>
+
+
+
+
+	<script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+		integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+		crossorigin="anonymous"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+
+</html>

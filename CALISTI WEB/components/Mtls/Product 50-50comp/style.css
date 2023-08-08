@@ -1,0 +1,35 @@
+.mtls__margin-bootom {
+    margin-bottom: 10px !important;
+}
+
+.mtls__margin-top__button {
+    margin-top: 60px !important;
+}
+
+.common__margin-top {
+    margin-top: 100px !important;
+}
+
+.common__margin-bottom {
+    margin-bottom: 100px !important;
+}
+
+.common__btn-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    width: fit-content;
+    gap: 10px;
+    border: 1px solid #d81159;
+    font-family: "Cisco Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    color: #0d274d;
+}

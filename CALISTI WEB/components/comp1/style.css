@@ -1,0 +1,14 @@
+.comp-head-title {
+    display: flex;
+    flex-direction: column;
+}
+.comp-head-span {
+    font-size: 3rem;
+}
+comp-btn:hover {
+    color: white;
+}
+.comp-head-img {
+    width: 709.96px;
+    height: 410px;
+}

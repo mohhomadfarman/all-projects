@@ -1,0 +1,80 @@
+.comp6-head {
+    line-height: 3.125rem;
+    font-weight: 700;
+    font-size: 32px;
+}
+.comp6-head-p {
+    font-family: "Cisco Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.375rem;
+    /* or 20px */
+
+    letter-spacing: 0.005em;
+}
+.comp6-box-1:hover,
+.comp6-box-1:focus {
+    /* width: 273.78px; */
+    height: 293.2px;
+    background: #0d274d;
+    box-shadow: 0px 0.4625rem 1.4452rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5781rem;
+    color: white !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 44px 22px;
+    gap: 24px;
+
+    transition: 0.5s all ease-in-out;
+}
+.comp6-box-1-example {
+    /* width: 273.78px; */
+    height: 293.2px;
+    background: #0d274d;
+    box-shadow: 0px 0.4625rem 1.4452rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5781rem;
+    color: white !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 44px 22px;
+    gap: 24px;
+
+    transition: 0.5s all ease-in-out;
+}
+.comp6-box-1 {
+    /* width: 273.78px; */
+    height: 18.325rem;
+    background: #ffffff;
+    /* Light/Other Color/Info */
+
+    border: 0.924919px solid #f1f1f6;
+    border-radius: 7.39935px;
+    color: #11142d;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 44px 22px;
+    gap: 24px;
+    text-transform: unset;
+}
+
+.comp6-box-1 h3 {
+    font-family: "Cisco Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    /* identical to box height, or 24px */
+
+    letter-spacing: 0.005em;
+
+    /* Light/Base Color/White */
+
+    color: #0d274d;
+}
+.comp6-margin_bottom {
+    margin-bottom: 5.915rem;
+}

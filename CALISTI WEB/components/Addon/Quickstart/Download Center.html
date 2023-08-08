@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/bootstrap.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../../comp6/style.css" />
+
+    <title>4-up-tiles</title>
+  </head>
+
+  <body>
+    <section>
+      <div class="container">
+        <div class="row flex-column">
+          <div class="col-12">
+            <div class="Qucik__head-mb">
+              <h1>Download Center</h1>
+              <p>All you need to get started with Calisti.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="main__heading__bar Qucik__head-margin-bottom">
+              <div class="circle">
+                <h4 class="m-0">1</h4>
+              </div>
+              <h4 class="text-white">Download the Binaries</h4>
+            </div>
+            <div class="text-area-download">
+              <p>
+                To use Calisti, you must download a CLI. If you are already
+                using Calisti and want to upgrade from an earlier release, check
+                out what's new. Select your preferred platform for the CLI::
+              </p>
+
+              <div
+                class="btns-gap btns-margin d-flex justify-content-start align-items-center flex-wrap"
+              >
+                <button class="btn-1-mac">
+                  <i class="bi bi-download"></i> Macintosh
+                </button>
+                <button class="btn-1-mac">
+                  <i class="bi bi-download"></i> Linux
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="main__heading__bar Qucik__head-margin-bottom">
+              <div class="circle">
+                <h4 class="m-0">2</h4>
+              </div>
+              <h4 class="text-white">Get your Activation Credentials</h4>
+            </div>
+            <div class="text-area-download">
+              <p>
+                Calisti needs to store your credentials to fetch the container
+                images. Run this command:
+              </p>
+              <div class="code-editor btns-margin2">
+                <code id="copy">kubectl config get-contexts </code>
+                <img
+                  class="pointer"
+                  width="24px"
+                  src="./img/content_paste_FILL0_wght400_GRAD0_opsz48.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="main__heading__bar Qucik__head-mb-2">
+              <div class="circle">
+                <h4 class="m-0">3</h4>
+              </div>
+              <h4 class="text-white">Install Calisti</h4>
+            </div>
+            <div class="text-area-download">
+              <p class="mb-3">
+                For detailed installation steps, see the
+                <a class="a-down-link" href="#">Quick Start</a> guide. Check
+                your Kubernetes cluster against the prerequisites listed in the
+                guide. Note that with the Free Tier you can use a maximum of 2
+                clusters and 10 Kubernetes worker nodes in total across all of
+                the clusters. For details, see our
+                <a class="a-down-link" href="#">licensing page</a>.
+                <br />
+              </p>
+              <p>
+                Visit our <a class="a-down-link" href="#">support</a> page for
+                further questions or support.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../css/bootstrap.js"></script>
+
+    <script>
+      function myFunction() {
+        // Get the text field
+        var copyText = document.getElementById("copy");
+
+        // Select the text field
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); // For mobile devices
+
+        // Copy the text inside the text field
+        navigator.clipboard.writeText(copyText.value);
+
+        // Alert the copied text
+        alert("Copied the text: " + copyText.value);
+      }
+    </script>
+  </body>
+</html>
